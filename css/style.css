@@ -48,13 +48,13 @@ h3,
 h4,
 p {
     color: #4a4a4a;
+    line-height: 1.2;
 }
 
 h1 {
     font-size: 2.25rem;
     font-weight: 300;
     letter-spacing: 0.4px;
-    line-height: 1.2;
 }
 
 h2 {
@@ -67,11 +67,20 @@ h4 {
     letter-spacing: 0.2px;
 }
 
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
 p {
     font-size: 1.125rem;
     letter-spacing: 0.2px;
     margin: 0;
     line-height: 1.88;
+}
+
+.hidden {
+    display: none;
 }
 
 .accent {
@@ -82,8 +91,31 @@ p {
     color: rgba(74,74,74,0.7);
 }
 
-.primary {
+a.button {
+    border-radius: 0.2em;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    padding: 1rem 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.button-primary {
     background-color: #6abfc3;
+}
+
+.button-secondary {
+    background-color: #cc9543;
+}
+
+.gray-bg {
+    background: #f3f3f3;
 }
 
 .bold {
@@ -184,21 +216,6 @@ p.cover-subtitle {
     padding-bottom: 4.375rem;
 }
 
-a.button {
-    border-radius: 0.2em;
-    box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
-    color: #fff;
-    display: inline-block;
-    font-size: 1em;
-    font-weight: bold;
-    letter-spacing: 0.2px;
-    padding: 1rem 2.5rem;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-}
-
 /* section how */
 
 section.how {
@@ -243,6 +260,128 @@ h4.feature-subtitle {
 
 div.feature-desc {
     padding: 0 32px;
+}
+
+/* section curriculum */
+
+section.curriculum-title {
+    padding-top: 60px;
+    text-align: center;
+}
+
+section.curriculum-title > h2 {
+    padding-bottom: 60px;
+}
+
+section.curriculum-details {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -15px;
+}
+
+div.curriculum-detail {
+    height: 150px;
+    margin: 0 auto 15px;
+    padding: 25px;
+    width: 270px;
+    max-width: 270px;
+    box-shadow: 0 7px 16px 0 rgba(0,0,0,0.05);
+    background: #fff;
+    text-align: center;
+}
+
+div.curriculum-detail > img {
+    height: 80px;
+    width: 80px;
+}
+
+section.curriculum-button {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+section.curriculum-button > a.button {
+    margin: 40px 0 0;
+}
+
+/* section success */
+
+section.success-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    letter-spacing: 0.3px;
+}
+
+section.success-title > h2 {
+    margin-bottom: 0.5rem;
+}
+
+section.success-stories {
+    margin-top: 20px;
+    max-width: 1280px;
+    min-height: 400px;
+}
+
+div.success-story:nth-last-child(-n+2) {
+    display: none;
+}
+
+div.success-story {
+    padding: 0 26px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+div.success-subtitle {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.success-photo {
+    display: none;
+}
+
+section.success-read {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+section.success-read > a {
+    text-decoration: underline;
+}
+section.success-bottom {
+    font-weight: 100;
+    padding: 5em 2.5em;
+    text-align: center;
+}
+
+p.success-bottom-title {
+    font-size: 1.75rem;
+    line-height: 1.5em;
+    margin: 0 auto 3.5rem;
+    max-width: 25em;
+}
+
+/* footer */
+
+footer.bottom {
+    background-color:
+    #fff;
+    padding: 0;
+    text-align: center;
+    font-size: 1em;
+    min-height: 70px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
 }
 
 /* Media query */
