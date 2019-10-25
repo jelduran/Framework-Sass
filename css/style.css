@@ -136,7 +136,6 @@ header#top {
 }
 
 div.brand {
-    width: 250px;
     display: inline-block;
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
@@ -165,6 +164,10 @@ div.logo_text {    flex: 1;
     font-size: 1.2em;
     display: inline-block;
     padding-left: 0.5em;
+}
+
+ul.navbar {
+    display: none;
 }
 
 button.burguer {
@@ -279,12 +282,14 @@ section.curriculum-title > h2 {
 
 section.curriculum-details {
     width: 100%;
+    max-width: 570px;
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: -15px;
+    float: none;
 }
 
 div.curriculum-detail {
@@ -296,6 +301,7 @@ div.curriculum-detail {
     box-shadow: 0 7px 16px 0 rgba(0,0,0,0.05);
     background: #fff;
     text-align: center;
+    float: none;
 }
 
 div.curriculum-detail > img {
@@ -377,8 +383,7 @@ p.success-bottom-title {
 /* footer */
 
 footer.bottom {
-    background-color:
-    #fff;
+    background-color:#fff;
     padding: 0;
     text-align: center;
     font-size: 1em;
@@ -386,6 +391,14 @@ footer.bottom {
     width: 100%;
     position: relative;
     bottom: 0px;
+}
+
+div.bottom-brand {
+    display: none;
+    min-height: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 div.bottom-socials {
@@ -487,5 +500,152 @@ a.bottom-link {
 
     div.bottom-links {
         display: flex;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    div.curriculum-detail {
+        float: left;
+        height: 256px;
+        margin: 0 30px 30px 0;
+        max-width: 254px;
+        padding: 23px 46px 25px;
+        width: 254px;
+    }
+
+    div.curriculum-detail > img {
+        height: 160px;
+        width: 160px;
+    }
+
+    div.curriculum-detail > h4 {
+        margin-top: 18px;
+    }
+
+    section.success-stories {
+        float: none;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:1023px) {
+    div.curriculum-detail:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    img.feature-image {
+        height: 165px;
+    }
+
+    div.feature-desc {
+        padding: 0;
+    }
+
+    section.features {
+        float: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header#top {
+        position: initial;
+        max-height: 100%;
+        padding: 0 168px;
+        z-index: 100;
+    }
+
+    div.logo_text {
+        font-size: 1.6em;
+    }
+    
+    button.burguer {
+        display: none;
+    }
+
+    footer.bottom {
+        min-height: 277px;
+    }
+    
+    div.bottom-brand {
+        display: flex;
+    }
+
+    div.bottom-brand-container {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1em;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    img.logo_image {
+        height: 70px;
+    }
+
+    ul.navbar {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-left: auto !important;
+        list-style: none;
+        color:#676767;
+        white-space: nowrap;
+    }
+
+    li.nav-item {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    li.divider {
+        font-size: 1.5em;
+        line-height: 78px;
+    }
+
+    a.nav-link {
+        color:rgba(74,74,74,0.7);
+        text-decoration: none;
+        letter-spacing: 0.2px;
+        font-size: 1em;
+        font-weight: bold;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    a.dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0.255em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid
+        transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid
+        transparent;
+    }
+
+    section.curriculum-details {
+        max-width: 852px;
+    }
+
+    div.curriculum-detail:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    div.curriculum-detail:nth-last-child(2) {
+        margin-left: 127px;
+    }
+
+    section.success-stories {
+        max-width: 1280px;
     }
 }
