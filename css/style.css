@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "Norse";
-  src: url("fonts/norse/Norse.woff2") format("woff2"),
+  src:
+    url("fonts/norse/Norse.woff2") format("woff2"),
     url("fonts/norse/Norse.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -10,7 +11,8 @@
 
 @font-face {
   font-family: "Norse";
-  src: url("fonts/norse/Norse-Bold.woff2") format("woff2"),
+  src:
+    url("fonts/norse/Norse-Bold.woff2") format("woff2"),
     url("fonts/norse/Norse-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -18,7 +20,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("fonts/open-sans/OpenSans-Light.woff2") format("woff2"),
+  src:
+    url("fonts/open-sans/OpenSans-Light.woff2") format("woff2"),
     url("fonts/open-sans/OpenSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -26,7 +29,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("fonts/open-sans/OpenSans-Regular.woff2") format("woff2"),
+  src:
+    url("fonts/open-sans/OpenSans-Regular.woff2") format("woff2"),
     url("fonts/open-sans/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -34,7 +38,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("fonts/open-sans/OpenSans-Bold.woff2") format("woff2"),
+  src:
+    url("fonts/open-sans/OpenSans-Bold.woff2") format("woff2"),
     url("fonts/open-sans/OpenSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -132,7 +137,7 @@ header#top {
   max-height: 100%;
   margin-bottom: 50px;
   display: flex;
-  background: #ffffff;
+  background: #fff;
 }
 
 div.brand {
@@ -159,7 +164,7 @@ div.logo_text {
   flex: 1;
   color: #cc9543;
   text-transform: uppercase;
-  font-family: "Norse";
+  font-family: "Norse", Times, serif;
   letter-spacing: 0.4px;
   font-weight: bold;
   font-size: 1.2em;
@@ -338,14 +343,14 @@ section.success-stories {
   min-height: 400px;
 }
 
-div.success-story:nth-last-child(-n + 2) {
-  display: none;
-}
-
 div.success-story {
   padding: 0 26px;
   max-width: 600px;
   margin: 0 auto;
+}
+
+div.success-story:nth-last-child(-n + 2) {
+  display: none;
 }
 
 div.success-subtitle {
@@ -368,6 +373,7 @@ section.success-read {
 section.success-read > a {
   text-decoration: underline;
 }
+
 section.success-bottom {
   font-weight: 100;
   padding: 5em 2.5em;
@@ -391,7 +397,7 @@ footer.bottom {
   min-height: 70px;
   width: 100%;
   position: relative;
-  bottom: 0px;
+  bottom: 0;
 }
 
 div.bottom-brand {
