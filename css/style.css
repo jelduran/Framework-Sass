@@ -1,0 +1,634 @@
+/* typography */
+
+@font-face {
+  font-family: "Norse";
+  src:
+    url("fonts/norse/Norse.woff2") format("woff2"),
+    url("fonts/norse/Norse.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Norse";
+  src:
+    url("fonts/norse/Norse-Bold.woff2") format("woff2"),
+    url("fonts/norse/Norse-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/open-sans/OpenSans-Light.woff2") format("woff2"),
+    url("fonts/open-sans/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/open-sans/OpenSans-Regular.woff2") format("woff2"),
+    url("fonts/open-sans/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/open-sans/OpenSans-Bold.woff2") format("woff2"),
+    url("fonts/open-sans/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* general */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #4a4a4a;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2px;
+}
+
+h4 {
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+}
+
+h5 {
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+h6 {
+  font-size: 0.85rem;
+  letter-spacing: 0.2px;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+p {
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+  margin: 0;
+  line-height: 1.88;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* header */
+
+header#top {
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  max-height: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  background: #fff;
+}
+
+div.brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+a.imagotype {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+img.logo_image {
+  height: 60px;
+}
+
+div.logo_text {
+  flex: 1;
+  color: #cc9543;
+  text-transform: uppercase;
+  font-family: "Norse", Times, serif;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+ul.navbar {
+  display: none;
+}
+
+button.burguer {
+  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  height: 68px;
+  border: none;
+  padding: 0;
+  right: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+
+span.burguer-icon {
+  display: block;
+  height: 60px;
+  background-image: url("../img/burguer-icon.svg");
+  background-position: center;
+  width: 1.5em;
+  content: "";
+  background-size: 100% 100%;
+}
+
+/* cover */
+
+.cover {
+  margin-top: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom, #fff, #eee);
+}
+
+header#cover-head {
+  padding-bottom: 3.75rem;
+}
+
+h1.cover-title {
+  margin-bottom: 0;
+  padding-bottom: 1.875rem;
+}
+
+p.cover-subtitle {
+  padding-bottom: 4.375rem;
+}
+
+img.cover-image {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* section how */
+
+section.how {
+  padding-top: 60px;
+}
+
+div.how-container {
+  margin: 0 auto 3em;
+  padding: 0 15px;
+  text-align: center;
+  max-width: 600px;
+}
+
+div.how-container > h2 {
+  margin-bottom: 36px;
+}
+
+div.how-container > p {
+  padding-top: 1em;
+}
+
+/* section features */
+
+section.features {
+  max-width: 1080px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+div.feature {
+  padding: 1em;
+}
+
+img.feature-image {
+  height: 80px;
+}
+
+h4.feature-subtitle {
+  margin: 50px 0 20px;
+}
+
+div.feature-desc {
+  padding: 0 32px;
+}
+
+/* section curriculum */
+
+section.curriculum-title {
+  padding-top: 60px;
+  text-align: center;
+}
+
+section.curriculum-title > h2 {
+  padding-bottom: 60px;
+}
+
+section.curriculum-details {
+  width: 100%;
+  max-width: 570px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -15px;
+  float: none;
+}
+
+div.curriculum-detail {
+  height: 150px;
+  margin: 0 auto 15px;
+  padding: 25px;
+  width: 270px;
+  max-width: 270px;
+  box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  text-align: center;
+  float: none;
+}
+
+div.curriculum-detail > img {
+  height: 80px;
+  width: 80px;
+}
+
+section.curriculum-button {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+section.curriculum-button > a.button {
+  margin: 40px 0 0;
+}
+
+/* section success */
+
+section.success-title {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 0.3px;
+}
+
+section.success-title > h2 {
+  margin-bottom: 0.5rem;
+}
+
+section.success-stories {
+  margin-top: 20px;
+  max-width: 1280px;
+  min-height: 400px;
+}
+
+div.success-story {
+  padding: 0 26px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+div.success-story:nth-last-child(-n + 2) {
+  display: none;
+}
+
+div.success-subtitle {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.success-photo {
+  display: none;
+}
+
+section.success-read {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+section.success-read > a {
+  text-decoration: underline;
+}
+
+section.success-bottom {
+  font-weight: 100;
+  padding: 5em 2.5em;
+  text-align: center;
+}
+
+p.success-bottom-title {
+  font-size: 1.75rem;
+  line-height: 1.5em;
+  margin: 0 auto 3.5rem;
+  max-width: 25em;
+}
+
+/* footer */
+
+footer.bottom {
+  background-color: #fff;
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  min-height: 70px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+div.bottom-brand {
+  display: none;
+  min-height: inherit;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+div.bottom-socials {
+  min-height: inherit;
+  padding: 0;
+}
+
+div.bottom-social {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.bottom-social > a {
+  font-size: 24px;
+}
+
+div.bottom-links {
+  display: none;
+  min-height: inherit;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+div.bottom-links-container {
+  width: 130px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+a.bottom-link {
+  flex-basis: 30px;
+  color: rgba(74, 74, 74, 0.7);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0;
+}
+
+/* Media query */
+
+@media screen and (min-width: 480px) {
+  img.feature-image {
+    height: 120px;
+  }
+
+  div.feature-desc {
+    padding: 0 72px;
+  }
+
+  section.success-stories {
+    margin-top: 100px;
+  }
+
+  div.success-story {
+    display: flex;
+    padding: 0 0 36px;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  div.success-photo {
+    flex-basis: 100px;
+    text-align: center;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.success-photo > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  div.success-content {
+    flex: 1;
+  }
+
+  div.success-subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+  }
+
+  div.success-story:nth-last-child(-n + 2) {
+    display: flex;
+  }
+
+  footer.bottom {
+    min-height: 140px;
+  }
+
+  div.bottom-links {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  div.curriculum-detail {
+    float: left;
+    height: 256px;
+    margin: 0 30px 30px 0;
+    max-width: 254px;
+    padding: 23px 46px 25px;
+    width: 254px;
+  }
+
+  div.curriculum-detail > img {
+    height: 160px;
+    width: 160px;
+  }
+
+  div.curriculum-detail > h4 {
+    margin-top: 18px;
+  }
+
+  section.success-stories {
+    float: none;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+  div.curriculum-detail:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  img.feature-image {
+    height: 165px;
+  }
+
+  div.feature-desc {
+    padding: 0;
+  }
+
+  section.features {
+    float: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header#top {
+    position: initial;
+    max-height: 100%;
+    padding: 0 168px;
+    z-index: 100;
+  }
+
+  div.logo_text {
+    font-size: 1.6em;
+  }
+
+  button.burguer {
+    display: none;
+  }
+
+  footer.bottom {
+    min-height: 277px;
+  }
+
+  div.bottom-brand {
+    display: flex;
+  }
+
+  div.bottom-brand-container {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1em;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+  img.logo_image {
+    height: 70px;
+  }
+
+  ul.navbar {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-left: auto !important;
+    list-style: none;
+    color: #676767;
+    white-space: nowrap;
+  }
+
+  li.nav-item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  li.divider {
+    font-size: 1.5em;
+    line-height: 78px;
+  }
+
+  a.nav-link {
+    color: rgba(74, 74, 74, 0.7);
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-size: 1em;
+    font-weight: bold;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  a.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+
+  section.curriculum-details {
+    max-width: 852px;
+  }
+
+  div.curriculum-detail:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  div.curriculum-detail:nth-last-child(2) {
+    margin-left: 127px;
+  }
+
+  section.success-stories {
+    max-width: 1280px;
+  }
+}
